@@ -14,7 +14,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "E-mail",
-    details: "contato@artemoveis.com.br",
+    details: "contato@jocaplanejados.com.br",
   },
   {
     icon: Clock,
