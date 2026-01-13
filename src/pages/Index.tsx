@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 
 const Index = () => {
+  console.log("🏠 Página Index renderizada");
+  
   return (
     <div className="min-h-screen">
       <Header />

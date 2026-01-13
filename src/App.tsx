@@ -12,6 +12,11 @@ const App = () => {
   // Basename para GitHub Pages
   const basename = import.meta.env.PROD ? '/joca-planejados' : '/';
   
+  // Debug
+  console.log("🔧 Modo produção:", import.meta.env.PROD);
+  console.log("🔧 Basename:", basename);
+  console.log("🔧 URL atual:", window.location.pathname);
+  
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>

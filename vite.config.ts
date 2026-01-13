@@ -26,26 +26,17 @@ export default defineConfig(({ command, mode }) => {
       minify: 'esbuild', // Mais rápido que terser
       rollupOptions: {
         output: {
-          // Chunking para melhor cache
-          manualChunks: (id) => {
-            if (id.includes('node_modules')) {
-              if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
-                return 'react-vendor';
-              }
-              if (id.includes('@radix-ui')) {
-                return 'ui-vendor';
-              }
-              return 'vendor';
-            }
-          },
+          // Chunking automático do Vite - mais confiável que manual
+          // O Vite automaticamente separa vendor chunks de forma segura
+          // Removendo chunking manual para evitar problemas de ordem de carregamento
         },
       },
       // Otimização de assets
       assetsInlineLimit: 4096, // Inline assets pequenos (< 4KB)
       chunkSizeWarningLimit: 1000,
-      // Remove console.log em produção
+      // Remove console.log em produção (temporariamente desabilitado para debug)
       esbuild: {
-        drop: command === 'build' ? ['console', 'debugger'] : [],
+        drop: [], // Desabilitado temporariamente para debug
       },
     },
     plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
@@ -53,6 +44,8 @@ export default defineConfig(({ command, mode }) => {
       alias: {
         "@": path.resolve(__dirname, "./src"),
       },
+      // Garantir que React seja resolvido corretamente
+      dedupe: ['react', 'react-dom'],
     },
   };
 });
