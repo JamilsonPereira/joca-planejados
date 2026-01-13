@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ command, mode }) => {
   // Base path para GitHub Pages (nome do repositório)
   // Em produção (build), usa o nome do repositório como base path
-  const base = command === 'build' ? '/joca-planejados/' : '/';
+  const base = command === 'build' ? '/joca-planejados' : '/';
   
   return {
     base,
