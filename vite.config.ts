@@ -4,10 +4,10 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => {
+export default defineConfig(({ command, mode }) => {
   // Base path para GitHub Pages (nome do repositório)
-  // Em produção, usa o nome do repositório como base path
-  const base = mode === 'production' ? '/joca-planejados/' : '/';
+  // Em produção (build), usa o nome do repositório como base path
+  const base = command === 'build' ? '/joca-planejados/' : '/';
   
   return {
     base,
@@ -45,7 +45,7 @@ export default defineConfig(({ mode }) => {
       chunkSizeWarningLimit: 1000,
       // Remove console.log em produção
       esbuild: {
-        drop: mode === 'production' ? ['console', 'debugger'] : [],
+        drop: command === 'build' ? ['console', 'debugger'] : [],
       },
     },
     plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
