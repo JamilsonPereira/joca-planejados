@@ -8,12 +8,12 @@ const Footer = () => {
           </a>
           
           <p className="font-sans text-sm text-primary-foreground/70 text-center">
-            © {new Date().getFullYear()} ArteMóveis. Todos os direitos reservados.
+            © {new Date().getFullYear()} Joca Planejados. Todos os direitos reservados.
           </p>
           
           <div className="flex items-center gap-4">
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5511996849028"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors duration-300"
@@ -24,7 +24,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://instagram.com/artemoveis"
+              href="https://www.instagram.com/jocaplanejados?igsh=MTJrcHUwdnQ3cWh0bw=="
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors duration-300"

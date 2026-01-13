@@ -16,7 +16,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           <a href="#inicio" className="font-display text-2xl font-semibold text-primary">
-            Arte<span className="text-gold">Móveis</span>
+            Joca<span className="text-gold">Planejados</span>
           </a>
 
           {/* Desktop Navigation */}

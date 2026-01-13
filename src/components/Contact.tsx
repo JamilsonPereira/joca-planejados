@@ -4,12 +4,12 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Endereço",
-    details: "Rua das Flores, 123 - Centro, São Paulo - SP",
+    details: "Rua Joaquim Santos Leite, 65 - Cotia - SP",
   },
   {
     icon: Phone,
     title: "Telefone",
-    details: "(11) 99999-9999",
+    details: "(11) 996849028",
   },
   {
     icon: Mail,
@@ -65,7 +65,7 @@ const Contact = () => {
           </p>
           <div className="flex justify-center gap-4">
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5511996849028"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-primary-foreground font-sans font-medium rounded-lg hover:bg-[#22c55e] transition-all duration-300 hover:shadow-lg"
@@ -76,7 +76,7 @@ const Contact = () => {
               WhatsApp
             </a>
             <a
-              href="https://instagram.com/artemoveis"
+              href="https://www.instagram.com/jocaplanejados?igsh=MTJrcHUwdnQ3cWh0bw=="
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-primary-foreground font-sans font-medium rounded-lg hover:opacity-90 transition-all duration-300 hover:shadow-lg"

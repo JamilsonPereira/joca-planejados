@@ -2,7 +2,7 @@ const FloatingButtons = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       <a
-        href="https://instagram.com/artemoveis"
+        href="https://www.instagram.com/jocaplanejados?igsh=MTJrcHUwdnQ3cWh0bw=="
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] rounded-full flex items-center justify-center shadow-elevated hover:scale-110 transition-transform duration-300"
@@ -13,7 +13,7 @@ const FloatingButtons = () => {
         </svg>
       </a>
       <a
-        href="https://wa.me/5511999999999"
+        href="https://wa.me/5511996849028"
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-elevated hover:scale-110 transition-transform duration-300"
