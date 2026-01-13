@@ -12,6 +12,8 @@ const Hero = () => {
           src={heroImage}
           alt="Cozinha planejada de luxo"
           className="w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-hero-gradient" />
       </div>
