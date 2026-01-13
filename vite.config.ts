@@ -4,21 +4,28 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-    hmr: {
-      overlay: true,
+export default defineConfig(({ mode }) => {
+  // Base path para GitHub Pages (nome do repositório)
+  // Em produção, usa o nome do repositório como base path
+  const base = mode === 'production' ? '/joca-planejados/' : '/';
+  
+  return {
+    base,
+    server: {
+      host: "::",
+      port: 8080,
+      hmr: {
+        overlay: true,
+      },
+      watch: {
+        usePolling: true,
+      },
     },
-    watch: {
-      usePolling: true,
+    plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "./src"),
+      },
     },
-  },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
-}));
+  };
+});
