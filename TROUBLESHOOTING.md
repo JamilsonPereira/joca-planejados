@@ -117,3 +117,4 @@ Se o problema persistir, verifique:
 - Network tab para ver quais recursos estão falhando
 - Actions do GitHub para erros no deploy
 
+

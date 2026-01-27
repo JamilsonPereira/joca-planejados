@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <a href="#inicio" className="font-display text-xl font-semibold text-primary-foreground">
-            Arte<span className="text-gold">Móveis</span>
+            Joca<span className="text-gold">Planejados</span>
           </a>
           
           <p className="font-sans text-sm text-primary-foreground/70 text-center">
@@ -24,7 +24,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/jocaplanejados?igsh=MTJrcHUwdnQ3cWh0bw=="
+              href="https://www.instagram.com/jocamoveisplanejados?igsh=MXVwcHUxa3J6MzE5Mg=="
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors duration-300"

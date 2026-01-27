@@ -4,7 +4,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Endereço",
-    details: "Rua Joaquim Santos Leite, 65 - Cotia - SP",
+    details: "Rua da Amizade, 59 - São Luis - MA",
   },
   {
     icon: Phone,
@@ -76,7 +76,7 @@ const Contact = () => {
               WhatsApp
             </a>
             <a
-              href="https://www.instagram.com/jocaplanejados?igsh=MTJrcHUwdnQ3cWh0bw=="
+              href="https://www.instagram.com/jocamoveisplanejados?igsh=MXVwcHUxa3J6MzE5Mg=="
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-primary-foreground font-sans font-medium rounded-lg hover:opacity-90 transition-all duration-300 hover:shadow-lg"
